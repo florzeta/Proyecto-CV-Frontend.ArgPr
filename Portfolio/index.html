@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <div class="container-fluid"></div>
+    <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand mb-0" href="#"><h1>Portfolio.</h1></a>
@@ -48,7 +48,7 @@
             <input
               type="text"
               id="name"
-              name="sender-name"
+              name="name"
               placeholder="Escribe tu nombre"
               class="input-field"
               required
@@ -59,7 +59,7 @@
             <input
               type="email"
               id="email"
-              name="sender-email"
+              name="email"
               placeholder="Ingreso tu correo electrónico"
               class="input-field"
               required
@@ -72,7 +72,7 @@
               cols="60"
               rows="10"
               placeholder="Escribe tu mensaje"
-              name="mensaje"
+              name="message"
               class="input-field"
               required
             ></textarea>
@@ -88,10 +88,13 @@
     </div>
 
     <section class="hero grid-container" id="about">
-      <div>
+      
+      <div class="imagen-hero">
         <img src="https://i.ibb.co/Pt5BHX9/pexels-christina-morillo-1181673.jpg" alt="foto personal" loading="lazy"
           class="hero-img" />
       </div>
+    
+    
       <div class="bio">
         <h2 class="bio-titulo">Sobre Mí</h2>
         <p class="bio-texto">
@@ -101,6 +104,7 @@
           repudiandae quos!
         </p>
       </div>
+    
     </section>
     <section class="mas-sobre-mi m-5">
       <div class="container-fluid">
@@ -201,6 +205,7 @@
       </div>
     </section>
 
+
   </main>
   <footer>
     <p class="copy">&copy; Copyright 2023</p>
@@ -217,6 +222,7 @@
     crossorigin="anonymous"></script>
 
   <script src="./assets/js/ventanaContacto.js"></script>
+  <script src="./assets/js/submit.js"></script>
 
 </body>
 
