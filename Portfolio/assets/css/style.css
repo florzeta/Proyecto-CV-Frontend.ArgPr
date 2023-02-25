@@ -80,8 +80,9 @@ nav {
     z-index: 1;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 3rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     background-image: url("https://i.ibb.co/ZLfSGsY/banner-verd.png");
@@ -98,6 +99,13 @@ nav h1 {
 nav a {
     color: var(--primary-color);
     transition: var(--transicion);
+    margin: 5px;
+}
+
+nav div a{
+    font-weight: bold;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 nav a:hover {
@@ -114,10 +122,23 @@ nav ul li {
     font-weight: var(--negrita);
 }
 
-.navbar-nav a {
+.navbar-nav p {
     font-size: 20px;
-    margin: 4px;
+    margin: 8px;
     align-items: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0;
+    color: #111111dc;
+}
+
+.navbar-nav button {
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#titulo-hero {
+    font-size: 35px;
 }
 
 .boton-ventana {
@@ -129,8 +150,8 @@ nav ul li {
     color: #111;
     cursor: pointer;
     display: flex;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
     height: 43px;
     justify-content: center;
     line-height: 24px;
@@ -142,6 +163,7 @@ nav ul li {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-top: 7px;
 }
 
 .boton-ventana:after {
@@ -196,8 +218,7 @@ nav ul li {
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap: 2.5rem;
-    max-width: 69rem;
+    max-width: 80rem;
     min-height: 380px;
     margin-top: 2rem;
 }
@@ -229,6 +250,11 @@ nav ul li {
     margin: 0;
 }
 
+#titulo{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
 
 
 .bio {
@@ -244,7 +270,8 @@ nav ul li {
 }
 
 .bio h1 {
-    font-size: 45px;
+    font-weight: bolder;
+    font-size: 38px;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
 }
@@ -382,18 +409,19 @@ nav ul li {
     
 }
 
-.accordion-body h4 {
+.accordion-body title {
     font-weight: bold;
+    font-weight: 300px;
     margin-top: 20px;
 }
 
 .accordion-body p {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 23px 30px;
+    font-size: 18px;
 }
 
 .accordion-body hr {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #302f2f;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -413,7 +441,7 @@ nav ul li {
 .proyectos {
     background-image: url("https://i.ibb.co/mc80NnT/codigo-vio-light.png");
     padding: 32px 0;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .card-image {
@@ -485,17 +513,35 @@ nav ul li {
     margin-bottom: var(--bottom-margin-2);
 }
 
-#myModal {
-    display: none;
+.modal {
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b3adcd88;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
 
+}
+
+.modal_container{
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 2rem 3rem;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    position: relative;
+    transform: var(--transform);
+    transition: var(--transition);
 }
 
 .modal-content {
@@ -508,8 +554,24 @@ nav ul li {
     max-width: 50rem;
     padding: 1rem;
     border-radius: 5px;
+    position: relative;
 }
 
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedor-formularios {
+    background: #FFF;
+    padding: 10px;
+    max-width: 650px;
+    border-radius: 5PX;
+    box-shadow: 0 4px 10px 4px #13131a5a;
+}
 
 .contenedor-formulario label {
     line-height: 2.7em;
@@ -589,6 +651,72 @@ input[type="submit"]:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.contenedor-formulario {
+    margin-bottom: 1em;
+}
+  
+.label-formulario {
+    display: block;
+    margin-bottom: 0.5em;
+}
+  
+.input-field {
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    background-color: #f5f5f5;
+}
+  
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-items: center;
+}
+  
+.submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+.swal2-icon {
+    font-size: 30px;
+    color: #3abb62;
+    margin-bottom: 20px;
+}
+  
+.swal2-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.swal2-content {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  
+.swal2-confirm {
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: #3abb62;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.swal2-confirm:hover {
+    background-color: #35a658;
 }
 
 footer {
