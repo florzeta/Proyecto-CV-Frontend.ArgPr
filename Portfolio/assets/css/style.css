@@ -183,6 +183,13 @@ nav ul li {
     display: none;
 }
 
+#section {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    letter-spacing: 2px;
+  }
 
 .hero {
     display: flex;
