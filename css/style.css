@@ -755,6 +755,9 @@ footer {
     .bio {
         min-width: 80px;
     }
+    .bio h1{
+        font-size: 25px;
+    }
     .mas-sobre-mi{
         margin: auto;
         padding: auto;
