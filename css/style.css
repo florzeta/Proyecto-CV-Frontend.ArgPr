@@ -742,6 +742,12 @@ footer {
     .boton-ventana {
         padding: 0 40px;
     }
+    .bio h1{
+        font-size: 30px;
+    }
+    .accordion-header{
+        margin: 1rem 1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -750,7 +756,7 @@ footer {
         gap: 0;
     }
     .imagen-hero img{
-        min-width: 200px;
+        min-width: 150px;
     }
     .bio {
         min-width: 80px;
@@ -764,5 +770,9 @@ footer {
     }
     .mas-sobre-mi div{
         padding: 1rem;
+    }
+    
+    .accordion-header{
+        margin: 3rem 1rem;
     }
 }
