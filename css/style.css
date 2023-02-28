@@ -294,6 +294,7 @@ nav ul li {
 }
 
 .mas-sobre-mi {
+    margin: 7rem;
     padding: 1.8rem;
     height: auto;
 }
@@ -740,5 +741,21 @@ footer {
 @media (min-width: 768px) {
     .boton-ventana {
         padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero{
+        flex-wrap: wrap;
+    }
+    .bio {
+        min-width: 80px;
+    }
+    .mas-sobre-mi{
+        margin: auto;
+        padding: auto;
+    }
+    .mas-sobre-mi div{
+        padding: 1rem;
     }
 }
