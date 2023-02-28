@@ -538,14 +538,13 @@ nav ul li {
     --transform: translateY(-100vh);
     --transition: transform .8s;
     border-radius: 8px;
-
 }
 
 .modal-content {
     background-color: var(--secondary-color);
-    margin: 15% auto;
+    margin: 6rem auto;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px #999;
     max-width: 55rem;
@@ -619,8 +618,15 @@ input[type="submit"]:hover {
     border-radius: 5px;
     border: none;
     border: 2px outset var(--secondary-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     outline: none;
+}
+
+.contenedor-formulario title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 2rem;
 }
 
 #closeBtn {
