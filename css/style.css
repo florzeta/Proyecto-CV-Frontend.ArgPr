@@ -744,9 +744,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .hero{
         flex-wrap: wrap;
+        gap: 0;
+    }
+    .imagen-hero img{
+        min-width: 200px;
     }
     .bio {
         min-width: 80px;
