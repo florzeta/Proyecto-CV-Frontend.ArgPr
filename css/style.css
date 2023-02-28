@@ -555,6 +555,8 @@ nav ul li {
     transition: var(--transition);
 }
 
+
+
 .modal-show {
     opacity: 1;
     pointer-events: unset;
