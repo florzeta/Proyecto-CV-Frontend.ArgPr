@@ -1,5 +1,9 @@
 # Proyecto Final | Curso Desarrollo Frontend - Arg Prog 4.0
 Proyecto final integrador con diseño de CV para el curso de desarrollo front-end presentado para el curso de Argentina Programa 4.0, Este proyecto CV es una página web personal que muestra información sobre mí, mis habilidades y mi experiencia.
+
+![Captura de pantalla 2023-02-28 211757 (1)](https://user-images.githubusercontent.com/99660646/222012901-25dc0169-eccb-4609-bb43-6e5337397b92.png)
+
+
 ***
 ## Características
   · HTML, CSS y JavaScript
